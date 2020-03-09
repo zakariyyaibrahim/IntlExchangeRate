@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Exchange</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+ crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+ integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ </script>
+</head>
+  <body>
+    <div id="app">
+      <h1>International currency Exchange rates in USD from {{currDate}} till date.
+    Designed by  &copy Zakariyya Ibrahim
+      </h1>
+      <p id="count"></p>
+
+      <div class="content">
+
+
+          <table class="table table-bordered " >
+        <thead  class="w3-brown">
+          <th>International Currencies</th>
+          <th>Equivalence in U.S Dollar($)</th>
+        </thead>
+        <tbody>
+          <tr class="w3-hover-green" v-for="(key, value) in currency">
+            <td>{{value}}</td>
+            <td>{{key}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+    </div>
+    <h1> &copy 2020 zakariyyum2@gmail.com <br>TIIDELAB FELLOWSHIP </h1>
+    <script src="vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="countdown.js" charset="utf-8"></script>
+    <script src="app.js" ></script>
+  </body>
+</html>
